@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,71 +8,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        
-    </header>
-     <section>
-        <img src="" alt="img" width="500" height="600">
-        <h3>Mr. B A Shivashankara Reddy</h3>
-         <h4>Full Stack Developer</h4>
-         <a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
 
-<a href="#" class="fa fa-linkedin"></a>
-<a href="#" class="fa fa-youtube"></a>
-<a href="#" class="fa fa-instagram"></a>
-<a href="#" class="fa fa-instagram"></a>
-     </section>
-   
-    
-    <footer>
-        <p>&copy; 2024 My Portfolio</p>
-    </footer>
+<body>
+    <div id="header">
+        <div class="container">
+
+            <nav>
+                <img src="images/logo.JPG" alt="logo">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav><br><br><br><br><br><br>
+            <div class="header_text">
+                <p>FullStack Developer</p>
+                <h3>Hi, I am <span>Shivashanakar</span> <br>From Karnataka</h3>
+
+            </div>
+        </div>
+    </div>
+    <div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <Img src="images/about.jpg"></Img>
+
+            </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1> <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quae ullam, magni animi tempore eius quo accusantium nesciunt, 
+                    voluptatem ipsa quis quibusdam totam velit? Facilis repudiandae 
+                    vel consequuntur nesciunt adipisci commodi.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab_links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab_links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab_links" onclick="opentab('education')">Education</p>                       
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Developement</span><br>Web App Developement</li>
+                            <li><span>App Developement</span><br>Building Android/iOS Apps</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - current</span><br>Flutter and Reactive Developer</li>
+                            <li><span>2020 -2022</span><br>Designing Web/App interfaces in Aeries Technology</li>
+                            <li><span>2015 -2020</span><br>NOC management in Synchronoss Technology Pvt.ltd</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2014 - 2017 </span><br>BE(CSE) @VTU Univercity</li>
+                            <li><span>20011 -2013</span><br>Diplamo in CSE @ BTE Univercity </li>
+                            <li><span>cetification guide</span><br>For Flutter and AI certications from Udacity and Udemy  </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+            
+        </div>
+
+    </div>
+</div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-<!-- <main>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio. I'm passionate about...</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title 1</h3>
-            <p>Description of the project goes here.</p>
-            <button class="view-gallery">View Gallery</button>
-            <div class="gallery hidden">
-                <img src="project-image1.jpg" alt="Project Image 1">
-                <img src="project-image2.jpg" alt="Project Image 2">
-                Add more images as needed -->
-            <!-- </div>
-        </div> -->
-        <!-- Add more projects as needed -->
-    <!-- </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-</main> -->

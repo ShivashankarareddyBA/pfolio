@@ -1,137 +1,136 @@
-/* Reset CSS */
-* {
-    box-sizing: border-box;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #080808;
+    color: white;
+
+}
+#header{
+    width: 100%;
+    height: 100%;
+   background-image: url(images/lap.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding:  10px 10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.log{
+    width: 140px;
+}
+nav ul li{  
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #343649;
-}
-
-header, nav, main, footer {
-    padding: 5px;
-}
-
-header {
-    background-color: #0c1242;
-    color: #fff;
-    text-align: center;
-    justify-content: center;
-    
-}
-
-nav ul {
-    list-style-type: none;
-    text-align: center;
-    padding: 10px 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+nav ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    position: relative;
 }
+nav ul li a ::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5px;
 
-main {
-    padding: 20px;
+
 }
-
-section {
-    margin-bottom: 50px;
+nav ul li a :hover::after{
+    width: 100px;
+} 
+.header_text{
+ margin-top: 20px;
+ font-size: 30px;
 }
-
-.project {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    border-radius: 5px;
+.header_text h3{
+    font-size: 50px;
+    margin-top: 20px;
 }
-
-.project h3 {
-    color: #333;
+.header_text h3 span{
+    color: #ff004f;
 }
+#About {
+    padding: 8px 0;
+    color: #ababab;
 
-.project p {
-    color: #666;
 }
-
-.project button {
-    display: block;
-    margin-top: 10px;
-}
-
-.gallery {
+.row{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    }
+
+    .about-col-1{
+        flex-basis: 35%;
+    }
+    .about-col-1 img{
+        width: 100%;
+        border-radius: 15px;
+    }
+    .about-col-2{
+        flex-basis: 60%;
+
+    }
+    .sub-title{
+        font-size: 50px;
+        font-weight: 600;
+        color: white;
+    }
+
+    .tab-titles{
+        display: flex;
+        margin: 20px 0 40px;
+    }
+    .tab_links{
+        margin-right: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    }
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #17004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5px;
+}
+.tab_links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
 }
 
-.gallery img {
-    width: 200px;
-    margin: 10px;
-}
-
-.hidden {
+.tab-contents{
     display: none;
 }
+.tab-contents.active-tab{
+    display: block;
 
-footer {
-    text-align: center;
-    background-color: #0c1242;
-    color: #fff;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
-
-
-.fa {
-    padding: 10px;
-    font-size: 20px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 2px 3px;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
-  
-  
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-  
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  }
