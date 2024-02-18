@@ -7,83 +7,216 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/27370cd43e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="header">
         <div class="container">
-
             <nav>
                 <img src="images/logo.JPG" alt="logo">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Contact</a></li>
+                <ul id="sideMenu">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
             </nav><br><br><br><br><br><br>
             <div class="header_text">
                 <p>FullStack Developer</p>
-                <h3>Hi, I am <span>Shivashanakar</span> <br>From Karnataka</h3>
-
+                <h3>Hi, I am <span>Shivashankar</span> <br>From Karnataka</h3>
             </div>
         </div>
     </div>
     <div id="About">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <Img src="images/about.jpg"></Img>
-
-            </div>
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg" alt="about">
+                </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1> <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quae ullam, magni animi tempore eius quo accusantium nesciunt, 
-                    voluptatem ipsa quis quibusdam totam velit? Facilis repudiandae 
-                    vel consequuntur nesciunt adipisci commodi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ullam, magni animi tempore eius
+                        quo accusantium nesciunt, voluptatem ipsa quis quibusdam totam velit? Facilis repudiandae vel
+                        consequuntur nesciunt adipisci commodi.</p>
 
                     <div class="tab-titles">
                         <p class="tab_links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab_links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab_links" onclick="opentab('education')">Education</p>                       
-
+                        <p class="tab_links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Developement</span><br>Web App Developement</li>
-                            <li><span>App Developement</span><br>Building Android/iOS Apps</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
                         </ul>
-
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>2022 - current</span><br>Flutter and Reactive Developer</li>
-                            <li><span>2020 -2022</span><br>Designing Web/App interfaces in Aeries Technology</li>
-                            <li><span>2015 -2020</span><br>NOC management in Synchronoss Technology Pvt.ltd</li>
+                            <li><span>2020 - 2022</span><br>Designing Web/App interfaces in Aeries Technology</li>
+                            <li><span>2015 - 2020</span><br>NOC management in Synchronoss Technology Pvt. Ltd</li>
                         </ul>
-
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2014 - 2017 </span><br>BE(CSE) @VTU Univercity</li>
-                            <li><span>20011 -2013</span><br>Diplamo in CSE @ BTE Univercity </li>
-                            <li><span>cetification guide</span><br>For Flutter and AI certications from Udacity and Udemy  </li>
+                            <li><span>2014 - 2017 </span><br>BE(CSE) @ VTU University</li>
+                            <li><span>2011 - 2013</span><br>Diploma in CSE @ BTE University </li>
+                            <li><span>Certification Guide</span><br>For Flutter and AI certifications from Udacity and
+                                Udemy </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aliquam dolorem aliquid
+                        sint.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aliquam dolorem aliquid
+                        sint.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aliquam dolorem aliquid
+                        sint.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p> The app connects you the talented people around the world.
+                            Download it from playStore.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Online shoping App</h3>
+                        <p> The app connects you the talented people around the world.
+                            Download it from playStore.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p> The app connects you the talented people around the world.
+                            Download it from playStore.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
 
                     </div>
                 </div>
 
+            </div>
+            <a href="#" class="btn">See More</a>
 
-            
+
+
+        </div>
+    </div>
+    <!-- ----------------------contacts........... -->
+
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ssr2tech@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>+91 9916838182</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https//www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https//www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https//www.twiter.com"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="images/doc.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+
+
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © SS Reddy. <i class="fa-regular fa-copyright"></i> 2024-all rights reserved </p>
         </div>
 
+
     </div>
-</div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwDU6b5UAi1v7DnTo1m2ftxjNSxAvu_bipP0mn-qO_QjGRLnFoqPLwHDSyoMVfhB_EPIw/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg=document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message sent successfully"
+                setTimeout(() => {
+                    msg.innerHTML=""
+                },5000 )
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message));
+        });
+      </script>
+      
 
     <script src="script.js"></script>
+    <script src="sidemenu.js"></script>
 </body>
 
 </html>
