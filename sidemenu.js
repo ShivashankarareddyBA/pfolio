@@ -4,6 +4,6 @@ function openMenu(){
     sideMenu.style.right="0";
 }
 
-function colsemenu(){
+function closeMenu(){
     sideMenu.style.right="-200px";
 }
