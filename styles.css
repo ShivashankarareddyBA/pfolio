@@ -323,7 +323,7 @@ nav ul li a:hover::after {
     width: 100%;
 }
 form input, textarea{
-    width: 100%;
+    width: 90%;
     border: 0;
     outline: none;
     background: #262626;
@@ -395,8 +395,8 @@ nav .fas{
     }
     nav ul .fas{
         position: absolute;
-        top: 25px;
-        left: 25px;
+        top: 10px;
+        left: 10px;
         cursor: pointer;
         ;
 
